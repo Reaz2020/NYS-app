@@ -1,2 +1,2 @@
-public class stay {
+public class stay extends booking{
 }
