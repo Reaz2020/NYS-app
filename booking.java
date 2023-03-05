@@ -84,6 +84,8 @@ public class booking {
             // block of code to be executed if the condition is true
             f1.book();
 
+
+
         }
         if (userChoice.equals("s")) {
             System.out.println("HOTEL/STAY BOOKING PORTAL");
