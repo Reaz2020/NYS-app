@@ -17,7 +17,9 @@ public class booking {
                 "for tourism press ---> t \n " +
                 "stay press       --- > s \n " +
                 "umrah press      --- > u \n " +
-                "flight press     --- > f \n ");
+                "flight press     --- > f \n " +
+                "admin     --- > a \n ");
+
         userChoiceHandling();
 
 
@@ -76,7 +78,10 @@ public class booking {
             tourism t1=new tourism();
             tourismBookingList.add(t1);
             // block of code to be executed if the condition is true
+            System.out.println("Book a package");
              t1.book();
+
+
         }
         if (userChoice.equals("f")) {
             System.out.println("FLIGHT BOOKING PORTAL");
@@ -100,6 +105,12 @@ public class booking {
             U1.book();
         }
 
+        if (userChoice.equals("a")) {
+            System.out.println("******   ADMIN PAGE ******");
+            admin a1=new admin();
+            // block of code to be executed if the condition is true
+            a1.createPackages();
+        }
 
 
     }
